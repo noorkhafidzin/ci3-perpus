@@ -50,10 +50,4 @@ class Koleksimodel extends CI_Model
         $this->db->where('id_buku', $id);
         return $this->db->update('koleksi_buku', $data);
     }
-
-    function get_peminjaman()
-    {
-        $query = $this->db->get('peminjaman');
-        return $query->result();
-    }
 }

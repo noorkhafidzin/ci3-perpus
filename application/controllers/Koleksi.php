@@ -96,14 +96,4 @@ class Koleksi extends CI_Controller
             redirect('koleksi');
         }
     }
-
-    public function peminjaman()
-    {
-        $data['listpeminjaman'] = $this->koleksimodel->get_peminjaman();
-        $data['listkoleksi'] = $this->koleksimodel->get_koleksi();
-        $judulhlm['judulhlm'] = 'Peminjaman Buku | Perpus Tiga Serangkai';
-        $this->load->view('layout/header', $judulhlm);
-        $this->load->view('peminjaman', $data);
-        $this->load->view('layout/footer');
-    }
 }

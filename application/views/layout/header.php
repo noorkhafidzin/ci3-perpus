@@ -24,7 +24,7 @@
                     <a class="nav-link" href="<?= base_url('/') ?>">Dashboard</a>
                     <a class="nav-link" href="<?= base_url('/User') ?>">User</a>
                     <a class="nav-link" href="<?= base_url('/Koleksi') ?>">Koleksi</a>
-                    <a class="nav-link" href="<?= base_url('/Koleksi/peminjaman') ?>">Peminjaman</a>
+                    <a class="nav-link" href="<?= base_url('/Peminjaman') ?>">Peminjaman</a>
                     <a class="nav-link" href="<?= base_url('/About') ?>">About</a>
                     <a class="nav-link" href="<?= base_url('login/logout') ?>">Logout</a>
                 </div>
