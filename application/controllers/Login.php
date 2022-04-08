@@ -36,10 +36,10 @@ class Login extends CI_Controller
             }
             $sesi = $this->usermodel->get_user_by_email($email);
             $this->session->set_userdata($sesi);
-            redirect('dashboard');
+            redirect(base_url('dashboard'));
         } else {
             $this->session->set_flashdata('pesan', 'Email atau Password salah');
-            redirect('login');
+            redirect(base_url('login'));
         }
     }
 
@@ -47,6 +47,6 @@ class Login extends CI_Controller
     {
         delete_cookie('tigaserangkai');
         $this->session->sess_destroy();
-        redirect('login');
+        redirect(base_url('login'));
     }
 }

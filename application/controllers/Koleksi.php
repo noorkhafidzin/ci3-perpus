@@ -55,7 +55,7 @@ class Koleksi extends CI_Controller
         $this->upload->do_upload('cover');
         if ($this->koleksimodel->insert($this->input->post(), $cover)) {
             $this->session->set_flashdata('pesan', ('Data Tersimpan'));
-            redirect('koleksi');
+            redirect(base_url('koleksi'));
         } else {
             echo 'data tidak berhasil ditambah';
         }
@@ -65,7 +65,7 @@ class Koleksi extends CI_Controller
     {
         $this->koleksimodel->delete($id);
         $this->session->set_flashdata('pesan', ('Data Terhapus'));
-        redirect('koleksi');
+        redirect(base_url('koleksi'));
     }
 
     public function edit($id = null)
@@ -93,7 +93,7 @@ class Koleksi extends CI_Controller
         }
         if ($this->koleksimodel->update($this->input->post(), $id)) {
             $this->session->set_flashdata('pesan', ('Data Diubah'));
-            redirect('koleksi');
+            redirect(base_url('koleksi'));
         }
     }
 }

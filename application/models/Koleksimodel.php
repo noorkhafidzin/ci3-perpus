@@ -11,7 +11,7 @@ class Koleksimodel extends CI_Model
     public function get_detail($a)
     {
         $this->db->where('id_buku', $a);
-        return $this->db->get('Koleksi_buku')->row_array();
+        return $this->db->get('koleksi_buku')->row_array();
     }
 
     public function insert($a, $cover)

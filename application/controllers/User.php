@@ -63,7 +63,7 @@ class User extends CI_Controller
     {
         $this->usermodel->delete($id);
         $this->session->set_flashdata('pesan', ('Data Terhapus'));
-        redirect('user');
+        redirect(base_url('user'));
     }
 
     public function user_edit($id = null)
@@ -91,7 +91,7 @@ class User extends CI_Controller
         }
         if ($this->usermodel->update($this->input->post(), $id)) {
             $this->session->set_flashdata('pesan', ('Data Diubah'));
-            redirect('user');
+            redirect(base_url('user'));
         }
     }
 }
