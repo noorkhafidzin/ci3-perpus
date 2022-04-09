@@ -2,10 +2,11 @@
 Live Preview
 *******************
 
-Silahkan kunjungi link berikut `Live Preview ci3-perpu
+Silahkan kunjungi link berikut `Live Preview ci3-perpus
 <http://dizzw.rf.gd/project/ci3-perpus/>`_.
--  email : bowo@gmail.com
--  pass : 12345
+
+*  email : bowo@gmail.com
+*  pass : 12345
 
 ###################
 What is CodeIgniter
