@@ -14,6 +14,9 @@ class Peminjamanmodel extends CI_Model
             'id_user' => $a['id_user'],
             'tgl_pinjam' => date('Y-m-d H:i:s')
         );
-        return $this->db->insert('peminjaman', $data);
+        $this->db->insert('peminjaman', $data);
+        $this->db->where('id_buku', $a['id_buku']);
+        $this->db->set('jumlah', 'jumlah-1', FALSE);
+        return $this->db->update('koleksi_buku',);
     }
 }
